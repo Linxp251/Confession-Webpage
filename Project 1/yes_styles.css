@@ -1,0 +1,34 @@
+head{
+    display: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9e3e3;
+    font-family: "楷体",sans-serif;
+}
+.container{
+    text-align: center;
+}
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+/* .header_text{
+    font-size: 3em;
+    color: #d32f2f;
+} */
+h1{
+    font-size: 3em;
+    color: #d32f2f;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;   
+}

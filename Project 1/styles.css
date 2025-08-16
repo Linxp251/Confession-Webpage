@@ -1,0 +1,56 @@
+head{
+    /* 这里是 */
+    display: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9e3e3;
+    font-family: "楷体",sans-serif;
+    flex-direction: column;
+}
+body .container{
+    text-align: center;
+}
+div{
+    display: block;
+    unicode-bidi: isolate;   
+}
+h1{
+    font-size: 2.5em;
+    color: #d32f2f;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;   
+}
+
+.bottons{
+    margin-top: 20px;
+}
+.yes-button{
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.no-button{
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
