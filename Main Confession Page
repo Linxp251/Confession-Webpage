@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式适配 -->
+    <title>我有话想对你说</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 链接主样式表 -->
+</head>
+<body>
+    <!-- 居中容器 -->
+    <div class="container">
+        <!-- 表白页图片 -->
+        <img src="Imgs/VM1fcpu2bKs1e2Kdbj.webp" alt="表白插图" class="confession-img">
+        <!-- 核心问题（可自定义） -->
+        <h1>你愿意做我的另一半吗？</h1>
+        <!-- 按钮组 -->
+        <div class="button-group">
+            <button id="yes-btn" class="btn yes-btn">Yes</button>
+            <button id="no-btn" class="btn no-btn">No</button>
+        </div>
+    </div>
+
+    <!-- 链接交互脚本 -->
+    <script src="script.js"></script>
+</body>
+</html>
