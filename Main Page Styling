@@ -1,0 +1,79 @@
+/* 全局样式重置：消除默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "楷体", KaiTi, sans-serif; /* 主题字体 */
+    background-color: #ffe6f2; /* 浅粉色背景 */
+    min-height: 100vh; /* 让页面占满屏幕高度 */
+    display: flex; /* 居中布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+/* 内容容器 */
+.container {
+    text-align: center;
+    padding: 2rem 3rem;
+    border-radius: 12px; /* 圆角 */
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(255, 105, 180, 0.2); /* 粉色阴影 */
+}
+
+/* 表白页图片 */
+.confession-img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem; /* 与标题间距 */
+}
+
+/* 问题标题 */
+h1 {
+    color: #ff4d94; /* 深粉色 */
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* 按钮组布局 */
+.button-group {
+    display: flex;
+    gap: 1.5rem; /* 按钮间距 */
+    justify-content: center;
+}
+
+/* 通用按钮样式 */
+.btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 30px; /* 圆形按钮 */
+    font-family: inherit; /* 继承字体 */
+    font-size: 1.1rem;
+    cursor: pointer; /* 鼠标悬浮变指针 */
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+}
+
+/* Yes按钮样式 */
+.yes-btn {
+    background-color: #ff3366; /* 红色 */
+    color: white;
+}
+
+.yes-btn:hover {
+    background-color: #cc2952; /*  hover时加深 */
+    transform: scale(1.05); /* 轻微放大 */
+}
+
+/* No按钮样式 */
+.no-btn {
+    background-color: #e0e0e0; /* 灰色 */
+    color: #333;
+}
+
+.no-btn:hover {
+    background-color: #d0d0d0;
+    transform: scale(1.05);
+}
