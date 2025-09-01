@@ -1,0 +1,43 @@
+// 1. 获取页面中的按钮元素
+const yesBtn = document.getElementById('yes-btn');
+const noBtn = document.getElementById('no-btn');
+
+// 2. 定义No按钮的备选文本（可自定义内容和数量）
+const noMessages = [
+    "再考虑一下？",
+    "真的不再想想吗？",
+    "我会很努力的！",
+    "再给我一次机会吧～",
+    "别这么快拒绝呀！"
+];
+
+// 3. 初始化No按钮点击计数器
+let noClickCount = 0;
+
+// 4. No按钮点击事件
+noBtn.addEventListener('click', () => {
+    // 更新No按钮文本（循环显示备选文本）
+    if (noClickCount < noMessages.length) {
+        noBtn.textContent = noMessages[noClickCount];
+        noClickCount++; // 计数器递增
+    } else {
+        // 文本用尽后，保持最后一条
+        noBtn.textContent = noMessages[noMessages.length - 1];
+    }
+
+    // 5. 每次点击No，放大Yes按钮（按10%递增）
+    // 获取当前Yes按钮的字体大小
+    const currentFontSize = parseFloat(getComputedStyle(yesBtn).fontSize);
+    yesBtn.style.fontSize = `${currentFontSize * 1.1}px`;
+
+    // 同时放大按钮内边距（确保整体尺寸协调）
+    const currentPaddingY = parseFloat(getComputedStyle(yesBtn).paddingY);
+    const currentPaddingX = parseFloat(getComputedStyle(yesBtn).paddingX);
+    yesBtn.style.paddingY = `${currentPaddingY * 1.1}px`;
+    yesBtn.style.paddingX = `${currentPaddingX * 1.1}px`;
+});
+
+// 6. Yes按钮点击事件：跳转到确认页面
+yesBtn.addEventListener('click', () => {
+    window.location.href = 'yes-index.html';
+});
