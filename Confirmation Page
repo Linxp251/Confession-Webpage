@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们在一起啦！</title>
+    <link rel="stylesheet" href="yes_styles.css"> <!-- 链接确认页样式 -->
+</head>
+<body>
+    <div class="confirmation-container">
+        <!-- 确认页图片 -->
+        <img src="Imgs/9XY4f3FgFTT4QlaYqa.webp" alt="开心插图" class="happy-img">
+        <!-- 确认标题 -->
+        <h1>太好了！我们在一起吧！</h1>
+        <!-- 副标题 -->
+        <p class="subtext">往后余生，风雪是你，平淡是你～</p>
+    </div>
+</body>
+</html>
