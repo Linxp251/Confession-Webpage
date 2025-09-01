@@ -1,0 +1,46 @@
+/* 全局重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "楷体", KaiTi, sans-serif;
+    background-color: #ffccf2; /* 稍深的粉色背景 */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 确认页容器 */
+.confirmation-container {
+    text-align: center;
+    padding: 3rem;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 6px 25px rgba(255, 51, 102, 0.3); /* 更明显的阴影 */
+}
+
+/* 确认页图片 */
+.happy-img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+/* 确认标题 */
+h1 {
+    color: #ff1a66; /* 鲜艳的红色 */
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* 副标题 */
+.subtext {
+    color: #ff6699; /* 粉色 */
+    font-size: 1.3rem;
+    font-style: italic; /* 斜体增加浪漫感 */
+}
